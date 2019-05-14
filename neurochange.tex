@@ -1,7 +1,7 @@
 \pdfoutput=1
 %% Author: PGL  Porta Mana
 %% Created: 2015-05-01T20:53:34+0200
-%% Last-Updated: 2019-05-06T23:25:03+0200
+%% Last-Updated: 2019-05-14T19:43:48+0200
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newif\ifarxiv
 \arxivfalse
@@ -17,14 +17,14 @@ onecolumn,oneside,article,%french,italian,german,swedish,latin,
 british%
 ]{memoir}
 \newcommand*{\updated}{\today}
-\newcommand*{\firstdraft}{***}
+\newcommand*{\firstdraft}{14 May 2019}
 \newcommand*{\firstpublished}{***}
-\newcommand*{\propertitle}{***%\\{\large ***}%
+\newcommand*{\propertitle}{Bayesian methods in neurscience:\\a transition tutorial%\\{\large ***}%
 }% title uses LARGE; set Large for smaller
-\newcommand*{\pdftitle}{\propertitle}
-\newcommand*{\headtitle}{***}
-\newcommand*{\pdfauthor}{P.G.L.  Porta Mana}
-\newcommand*{\headauthor}{Porta Mana}
+\newcommand*{\pdftitle}{Bayesian methods in neurscience: a transition tutorial}
+\newcommand*{\headtitle}{Bayesian neuroscience}
+\newcommand*{\pdfauthor}{The Fab Five}
+\newcommand*{\headauthor}{Fab Five}
 \newcommand*{\reporthead}{}% Report number
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -488,8 +488,8 @@ totalheight=\heightof{@}]{atblack.png}}\makeatother
 % \footnotesize\epost{\email{***}{***}}}%
 % \hspace*{\stretch{1}}%
 \parbox{0.5\linewidth}%\makebox[0pt][c]%
-{\protect\centering P.G.L.  Porta Mana\\%
-\footnotesize\epost{\email{piero.mana}{ntnu.no}}}%
+{\protect\centering The Fab Five\\%
+\footnotesize\epost{\email{***}{ntnu.no}}}%
 \hspace*{\stretch{1}}%
 %\quad\href{https://orcid.org/0000-0002-6070-0784}{\protect\includegraphics[scale=0.16]{orcid_32x32.png}\textsc{orcid}:0000-0002-6070-0784}%
 }
@@ -658,7 +658,7 @@ totalheight=\heightof{@}]{atblack.png}}\makeatother
 \setlength{\absrightindent}{0pt}
 \setlength{\abstitleskip}{-\absparindent}
 \begin{abstract}\labelsep 0pt%
-  \noindent ***
+  \noindent A tutorial for neuroscientists about the Bayesian way of thinking
 \\\noindent\emph{\footnotesize Note: Dear Reader
     \amp\ Peer, this manuscript is being peer-reviewed by you. Thank you.}
 % \par%\\[\jot]
@@ -690,38 +690,18 @@ totalheight=\heightof{@}]{atblack.png}}\makeatother
 %%% BEGINNING OF MAIN TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{***}
-\label{sec:***}
+\section*{Tentative scheme}
+
+
+
+
+\section{Intro}
+\label{sec:intro}
 
 \textcolor{white}{If you find this you can claim a postcard from me.}
 
 
 
-% \[
-%   \begin{tikzcd}
-%       M_{n,n}(\CC) \arrow{r}{R'_{a}(\Hat{U})} & M_{n,n}(\CC)
-%     \\
-%     L(\mathcal{H}) \arrow{r}{\Hat{U}} \arrow[swap]{d}{R_*}\arrow[swap]{u}{R'_*} & L(\mathcal{H}) \arrow{d}{R_*}\arrow{u}{R'_*} \\
-%       M_{n,n}(\CC) \arrow{r}{R_{a}(\Hat{U})} & M_{n,n}(\CC)
-%   \end{tikzcd}
-% \]
-
-% \[
-%   \begin{tikzcd}
-%       \CC^n \arrow{r}{R'_*(A)} & \CC^n
-%     \\
-%     \mathcal{H} \arrow{r}{A} \arrow[swap]{d}{R}\arrow[swap]{u}{R'} & \mathcal{H} \arrow{d}{R}\arrow{u}{R'} \\
-%       \CC^n \arrow{r}{R_*(A)} & \CC^n
-%   \end{tikzcd}
-% \]
-
-
-% \[
-%   \begin{tikzcd}
-%     \mathcal{H} \arrow{r}{A} \arrow[swap]{d}{R} & \mathcal{H} \arrow{d}{R} \\
-%       \CC^n \arrow{r}{R_*(A)} & \CC^n
-%   \end{tikzcd}
-% \]
 
 %%\setlength{\intextsep}{0.5ex}% with wrapfigure
 %\begin{figure}[p!]%{r}{0.4\linewidth} % with wrapfigure
@@ -735,9 +715,9 @@ totalheight=\heightof{@}]{atblack.png}}\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \iffalse
 \begin{acknowledgements}
-  \ldots to Mari \amp\ Miri for continuous encouragement and affection, and
-  to Buster Keaton and Saitama for filling life with awe and inspiration.
-  To the developers and maintainers of \LaTeX, Emacs, AUC\TeX, Open Science
+  PGLPM thanks Mari \amp\ Miri for continuous encouragement and affection;
+   Buster Keaton and Saitama for filling life with awe and inspiration;
+   the developers and maintainers of \LaTeX, Emacs, AUC\TeX, Open Science
   Framework, Python, Inkscape, Sci-Hub for making a free and unfiltered
   scientific exchange possible.
 %\rotatebox{15}{P}\rotatebox{5}{I}\rotatebox{-10}{P}\rotatebox{10}{\reflectbox{P}}\rotatebox{-5}{O}.
