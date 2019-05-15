@@ -1,7 +1,7 @@
 \pdfoutput=1
 %% Author: PGL  Porta Mana
 %% Created: 2015-05-01T20:53:34+0200
-%% Last-Updated: 2019-05-15T10:54:33+0200
+%% Last-Updated: 2019-05-15T22:12:20+0200
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newif\ifarxiv
 \arxivfalse
@@ -691,6 +691,102 @@ totalheight=\heightof{@}]{atblack.png}}\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{Tentative scheme}
+\mynote{Luca:}
+
+\subsection*{Purpose}
+
+The purpose of this paper in not so much to present the maths behind
+Bayesian methods, as to explain the \emph{different way of thinking} they
+require, compared to old probabilistic thinking. Here are some differences:
+\begin{itemize}
+\item Old thinking often considered dichotomous hypotheses that, on closer
+  scrutiny, weren't so distinguished after all. For example: \enquote{is
+    such-and-such difference zero, or different from zero?}. Well, what
+  about $10^{-100}$? that's different from zero; but wouldn't it be zero
+  for all practical purposes?
+
+  New thinking instead asks about a continuum of hypotheses:
+  \enquote{what's the value of such-and-such difference?}. Once we have the
+  most probable answer we can decide whether for us it can be considered as
+  zero or not -- and this depend on the purpose of our question.
+
+\item Old thinking often asked to estimate quantities that can't be
+  measured, such as the \enquote{probability} of something or a
+  parameter of some probability model.
+
+  New thinking asks about quantities that can in principle be measured. For
+  example, the frequency of some feature in a population of a given size,
+  or in a sequence of a given number of experiments, or the average in such
+  a sequence.
+
+\item Old thinking calculated probabilities to \emph{predict} something.
+
+  New thinking doesn't want to \enquote{predict} -- it leaves that magical
+  task to coffee grounds. It just wants to \emph{quantify our uncertainty}
+  about something. If an action or choice is required -- but that's not
+  always the case -- then from our quantified uncertainty and from the
+  costs of performing available actions we can decide which action is best
+  to choose. Compare the remark by Rasch \citep[p.~268]{lauritzen1974}:
+  \begin{quote}\footnotesize
+    The ``prediction'' is suggestive of the statistician as a magician who
+    can tell the future. \textelp{} To speak seriously: you do not really
+    \emph{predict} anything. What you do, is to calculate the distribution
+    of the variate in question, possibly offering its mean value or the
+    like as a likely event -- but only on the assumption that the model --
+    or a characteristic feature of it -- on which you based this
+    forecasting, still holds, i.e. confronted with what eventually does
+    happen \emph{you are faced with a test of this hypothesis} and nothing
+    else -- \emph{you were not telling what the future would
+      be}!\end{quote}
+
+\item \enquote{Significance}...
+\end{itemize}
+
+
+\subsection*{Layout}
+
+My idea would be to take a simple but realistic research question and show
+how to address it from beginning to end, pointing out the differences from
+the old way of thinking.
+
+An example: we wonder whether some feature -- say, neuronal activity or
+behaviour -- changes in two different settings, or with two different
+stimuli, or at two different ages, or with two different conditionings, or
+similar.
+
+Traditionally this is stated as the question \enquote{is the difference
+  between the two cases zero or significant?}. We show that it can instead
+be phrased as \enquote{how much is the difference?}, and the answer is a
+probability distribution for all possible values of the difference.
+
+In addition to this we can show the following:
+\begin{itemize}
+\item There may be choices to make based on the difference; for
+  example, further experiments, or buying new equipment, or something else.
+  The choices have different costs. Based on the costs we may end up making
+  very different choices, even if the probability distribution for the
+  difference is always the same. This example would show that speaking of
+  \enquote{significance} at the start was a bit preemptive and too
+  sweeping, because it wasn't clear for what it was significant.
+\item The calculation of the final probability distribution requires a
+  pre-data probability distribution about the hypotheses. We can consider
+  very different (but still sensible) pre-data distributions -- for example
+  representing \enquote{sceptics} and \enquote{believers} in the
+  hypotheses. Then we show how to roughly calculate how many data points
+  would be necessary for the final distribution to be more or less the
+  same, irrespective of the pre-data ones. This amount of data would the be
+  sufficient to convince a \enquote{sceptic}.
+
+  On the other hand, it sometimes happens that the scientific community has
+  already a strong belief in some hypothesis, because of some general
+  biological reasons or indirect experiments. In this case, only a few
+  datapoints are needed to make the community almost certain about the
+  hypothesis. Again, if we represent the initial belief with the pre-data
+  distribution, we can estimate the amount of datapoints necessary to feel
+  satisfied about the hypothesis, leading to some resource savings.
+\end{itemize}
+
+
 
 
 
